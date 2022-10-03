@@ -1,0 +1,145 @@
+:root {
+    --darkCyan: hsl(158, 36%, 37%);
+    --cream: hsl(30, 38%, 92%);
+    --veryDarkBlue: hsl(212, 21%, 14%);
+    --darkGrayishBlue: hsl(228, 12%, 48%);
+    --white: hsl(0, 0%, 100%);
+  }
+
+  body {
+    background-color: var(--cream);
+    width: 100vw;
+    height: 100vh;
+    box-sizing: border-box;
+  }
+
+  * {
+    /** Consejo Danielito**/
+    padding: 0;
+    margin: 0;
+    box-sizing: inherit;
+  }
+
+  p {
+    font-family: Montserrat, sans-serif;
+    font-size: 14px;
+    color: grey;
+  }
+  .precios {
+    display: flex;
+    flex-direction: row;
+  }
+  .precioBase {
+    text-decoration: line-through;
+    box-sizing: content-box;
+    padding-top: 5px;
+  }
+
+  .precioDescuento {
+    font-family: Fraunces, serif;
+    color: var(--darkCyan);
+    font-size: 28px;
+    box-sizing: content-box;
+    margin-right: 10px;
+  }
+
+  h1 {
+    font-family: Fraunces, serif;
+  }
+
+  input {
+    background-color: var(--darkCyan);
+    border-radius: 10px;
+    border-style: none;
+    width: 100%;
+    font-family: Montserrat, sans-serif;
+    color: var(--white);
+    padding: 14px;
+    margin: 0 auto;
+  }
+
+  input:hover {
+    background-color: var(--veryDarkBlue);
+  }
+
+  @media (max-width: 768px) {
+    /** Mobile design **/
+    body {
+      display: grid;
+      grid-template-columns: 5% 342px 5%; /* 90%*/
+      grid-template-rows: 15% 610px 15%; /* 70%*/
+      grid-template-areas:
+        ". . ."
+        ". card ."
+        ". . .";
+    }
+    #card {
+      grid-area: card;
+      border-radius: 20px;
+      display: flex;
+      flex-direction: column;
+      margin: 0 auto;      
+    }
+    #card img {
+      width: 100%;
+      height: 239px; /* 40% */
+      border-radius: 20px 20px 0 0;
+      object-fit: cover;
+    }
+
+    #info {
+      width: 100%;
+      height: 371px; /* 60% */
+      padding-left: 24px; /* 10% */
+      padding-right: 24px; /* 10% */
+      background-color: var(--white);
+      border-radius: 0 0 20px 20px;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-evenly;
+      
+    }
+  }
+
+  @media (min-width: 769px) {
+    /** Desktop design **/
+    body {
+      display: grid;
+      grid-template-columns: 1fr 600px 1fr; /** 2fr **/
+      grid-template-rows: 1fr 450px 1fr; /** 3fr **/
+      grid-template-areas:
+        ". . ."
+        ". card ."
+        ". . .";
+    }
+
+    #card {
+      grid-area: card;
+      margin: 0 auto;
+      border-radius: 20px;
+      display: flex;
+      flex-direction: row;
+      flex-wrap: nowrap;
+      justify-content: center;
+      gap: 0;
+    }
+    img {
+      width: 50%;
+      height: 100%;
+      object-fit: cover;
+      border-radius: 20px 0 0 20px;
+    }
+
+    #info {
+      background-color: hsl(0, 0%, 100%);
+      width: 50%;
+      height: 100%;
+      border-radius: 0 20px 20px 0;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-evenly;
+      box-sizing: border-box;
+      padding-left: 50px;
+      padding-right: 50px;
+    }
+  }
