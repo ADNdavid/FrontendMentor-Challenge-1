@@ -11,6 +11,11 @@ Users should be able to:
 - View the optimal layout depending on their device's screen size
 - See hover and focus states for interactive elements
 
+### Links
+
+- Solution URL: [Frontend Mentor](https://www.frontendmentor.io/solutions/product-preview-card-component-using-responsive-design-and-css-grid-8korZ7xBPV)
+- Live Site URL: [GitHub Pages](https://adndavid.github.io/FrontendMentor-Challenge-1/)
+
 ## My process
 
 ### Built with
@@ -53,4 +58,4 @@ Users should be able to:
 
 ## Acknowledgments
 
-I want to give a special thanks to [@DanielMejiaB](https://github.com/DanielMejiaB) for supporting me with a lot of doubts that I had been solving this challenge.And of course, all the people that give feedback on Frontend Mentor.
+I want to give a special thanks to [@DanielMejiaB](https://github.com/DanielMejiaB) for supporting me with a lot of doubts that I had been solving this challenge. And of course, all the people that give feedback on Frontend Mentor.
